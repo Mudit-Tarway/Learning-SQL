@@ -1,4 +1,4 @@
-use university;
+use university1;
 create table StudentInformation
 (
   StudentId INT, 
@@ -15,32 +15,30 @@ Create table Department (DeptId INT, DeptName VARCHAR(50));
 Create table Course (CourseId INT, CourseName VARCHAR(50));
 Create table Batch (BatchId INT, BatchName VARCHAR(50));
 Create table StudentStatus (StatusId INT, StatusDesc VARCHAR(50));
-Alter table StudentInformation add (DeptId INT , CourseId INT, BatchId INT, StatusId INT);
+Alter table StudentInformation add DeptId INT , CourseId INT, BatchId INT, StatusId INT;
 Insert into Department (DeptId , DeptName) values
-(101 , "CSE"),
-(102 , "CSE AI"),
-(103 , "CSBS"),
-(104 , "ECE");
+(101 , 'CSE'),
+(102 , 'CSE AI'),
+(103 , 'CSBS'),
+(104 , 'ECE');
 
 Insert into  Course (CourseId , CourseName) values
-(1011 , "C Programming"),
-(1021 , "Artifical Intelligence"),
-(1031 , "Bioinformatics"),
-(1041 , "Circuit Analog");
+(1011 , 'C Programming'),
+(1021 , 'Artifical Intelligence'),
+(1031 , 'Bioinformatics'),
+(1041 , 'Circuit Analog');
 
 Insert into Batch (BatchId , BatchName ) values
-(1013 , "BCS3B"),
-(1023 , "BCSAI3A"),
-(1033 , "BCCSBS3A"),
-(1043 , "BECE3A");
+(1013 , 'BCS3B'),
+(1023 , 'BCSAI3A'),
+(1033 , 'BCCSBS3A'),
+(1043 , 'BECE3A');
 
 Insert into  StudentStatus  ( StatusId , StatusDesc ) values
-(50 , "Completed"),
-(51 , "Active"),
-(52 , "Left"),
-(53 , "Active");
-
-Update StudentStatus Set StatusDesc = "On Leave" where StatusId = 53;
+(50 , 'Completed'),
+(51 , 'Active'),
+(52 , 'Left'),
+(53 , 'Active');
 
  select * from StudentInformation ;
 Insert into StudentInformation (StudentId , Name , Address,  Phone , Email, DateOfBirth, DateOfAdmission , DateOfPassing , PresentAddress , DeptId, CourseId, BatchId, StatusId ) 

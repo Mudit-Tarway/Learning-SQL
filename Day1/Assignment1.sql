@@ -1,5 +1,5 @@
-create database university;
-use university;
+create database university1;
+use university1;
 Create table Students(
 StudentId INT, 
 Name VARCHAR(100), 
@@ -30,10 +30,3 @@ DELETE FROM Students WHERE  DeptName = 'Computer Application';
 SELECT * FROM Students WHERE StudentStatus <> 'Completed';
 TRUNCATE TABLE Students; 
 DROP TABLE Students;
-
-
-
-
-
-
- 
